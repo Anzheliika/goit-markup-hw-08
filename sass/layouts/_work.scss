@@ -1,0 +1,28 @@
+.work {
+  padding-top: 0;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.work__list {
+  display: flex;
+  & .work__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.work__box {
+  position: relative;
+}
+.work__thumb {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 27px 0;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primery-white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}

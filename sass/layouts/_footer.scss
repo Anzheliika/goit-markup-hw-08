@@ -1,0 +1,179 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--bkg-block-color);
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      align-items: baseline;
+    }
+  }
+}
+.combination {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+    margin-bottom: 0;
+    margin-right: 70px;
+  }
+}
+.connection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
+}
+.connection__address {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: var(--primery-white-color);
+  text-decoration: none;
+  font-style: normal;
+}
+.combination__logo {
+  margin-bottom: 20px;
+  margin-left: 0;
+  color: var(--primery-white-color);
+}
+.connection .connection__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+.contact__item--footer:first-child {
+  margin-bottom: 8px;
+}
+.contact__link--footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+}
+.sign-up__text {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primery-white-color);
+  margin-bottom: 20px;
+}
+.sign-up__list {
+  @extend %flex-center;
+}
+.sign-up__item {
+  width: 44px;
+  height: 44px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.sign-up__link {
+  width: 100%;
+  height: 100%;
+  @extend %flex-center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--primery-white-color);
+
+  @include transition($tp: background-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.sign-up__icon {
+  fill: currentColor;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    align-items: flex-start;
+  }
+}
+.subscribe__label {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--primery-white-color);
+}
+.subscribe__mail {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+.subscribe__input {
+  width: 450px;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  outline: none;
+  color: var(--primery-white-color);
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0;
+  }
+}
+.subscribe__button {
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    padding: 10px 28px;
+    margin-left: 12px;
+  }
+}
+.subscribe__icon {
+  margin-left: 10px;
+  fill: var(--primery-white-color);
+}
+
+.combination-tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+  }
+}

@@ -1,0 +1,55 @@
+.hero {
+  background-color: var(--bkg-block-color);
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/overlay-mob.jpg);
+  @include retina {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/overlay-mob-2x.jpg);
+  }
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/overlay-tablet.jpg);
+    @include retina {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/overlay-tablet-2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/overlay.jpg);
+    @include retina {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/overlay-2x.jpg);
+    }
+  }
+}
+.hero_title {
+  margin-bottom: 30px;
+
+  color: var(--primery-white-color);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.34;
+  }
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+}

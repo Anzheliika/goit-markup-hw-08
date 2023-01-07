@@ -1,0 +1,11 @@
+@mixin transition($tp: color, $td: 250ms, $ttf: cubic-bezier(0.4, 0, 0.2, 1)) {
+  transition-property: $tp;
+  transition-duration: $td;
+  transition-timing-function: $ttf;
+}
+
+@mixin retina {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @content;
+  }
+}
