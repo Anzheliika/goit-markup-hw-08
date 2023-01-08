@@ -139,7 +139,7 @@
   }
 }
 .subscribe__input {
-  width: 450px;
+  width: 250px;
   height: 50px;
   margin-bottom: 20px;
   padding: 15px 16px;
@@ -148,6 +148,10 @@
   background-color: transparent;
   outline: none;
   color: var(--primery-white-color);
+
+   @media screen and (min-width: 480px) {
+    width: 450px;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 358px;

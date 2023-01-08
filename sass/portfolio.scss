@@ -160,7 +160,11 @@
   padding: 63px 24px 178px 24px;
 
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.5;
   color: var(--primery-white-color);
+
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+  }
 }
